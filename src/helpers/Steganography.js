@@ -49,6 +49,9 @@ export default class Steganography {
   constructor(context, img) {
     this.currentImg = img;
     this.imageContext = context;
+    this.state = {
+      loading: 0
+    }
     console.log("Steganography created with raw data. Dimensions", context);
   }
 

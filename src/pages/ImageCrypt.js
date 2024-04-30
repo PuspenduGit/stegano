@@ -38,7 +38,7 @@ export default class ImageCrypt extends React.Component {
         self.setState({ isLoading: true }, () => {
           self.steganObj = new Steganography(context, img); // Init your Steganography object
           let charSizeMax = self.steganObj.CalculateByteSize(); // Calculate bytes
-          // Beware. We are using base64 to avoid issues with UTF8 chars. This adds up 1.37 times more size. We are calculation that
+          // Beware. We are using base64 to avoid issues with UTF8 chars. This adds up 1.37 times more size.
           self.setState({
             maxCharCount: Math.floor(charSizeMax / (8 * 1.37)),
             isUploaded: true,

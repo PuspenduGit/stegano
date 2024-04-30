@@ -16,7 +16,7 @@ function App() {
     <Router>
       <nav className="navbar">
         <a href="/" className="BrandName">
-          Stegano
+          Stegano 
         </a>
         <input id="burger" type="checkbox" />
 
